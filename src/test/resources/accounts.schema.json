@@ -10,12 +10,12 @@
     "additionalProperties": false,
     "properties": {
       "data": {
-        "type": "object",
         "properties": {
           "body name": {
             "type": "string"
           }
-        }
+        },
+        "type": "object"
       }
     }
   }

@@ -1,10 +1,13 @@
 package rest;
 
+import org.junit.jupiter.api.Test;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 
-class MobileBankApiTestV1 {
+public class PostmanEchoTest {
+    @Test
     void shouldPostmanEcho() {
         // Given - When - Then
 // Предусловия
@@ -17,7 +20,7 @@ class MobileBankApiTestV1 {
 // Проверки
                 .then()
                 .statusCode(200)
-                .header("Content-Length", String.valueOf(422))
+                .header("Content-Length", String.valueOf(42))
                 .body("data", equalTo("some value"));
 
     }
