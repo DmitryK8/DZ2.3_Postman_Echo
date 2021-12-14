@@ -20,7 +20,7 @@ public class PostmanEchoTest {
 // Проверки
                 .then()
                 .statusCode(200)
-                .header("Content-Length", String.valueOf(424))
+                .header("Content-Length", String.valueOf(419))
                 .body("data", equalTo("some data"));
 
     }
