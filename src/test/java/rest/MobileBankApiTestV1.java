@@ -17,8 +17,8 @@ class MobileBankApiTestV1 {
 // Проверки
                 .then()
                 .statusCode(200)
-                .header("Content-Length", String.valueOf(424))
-                .body("data", equalTo("some data"));
+                .header("Content-Length", String.valueOf(422))
+                .body("data", equalTo("some value"));
 
     }
 }
